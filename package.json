@@ -1,0 +1,26 @@
+{
+  "name": "sampletest",
+  "version": "1.0.0",
+  "description": "sample test",
+  "main": "sample.js",
+  "scripts": {
+    "test": "node node_modules\\mocha\\bin\\mocha --reporter mocha-html-single-reporter"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jayasankar-m/sampletest.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jayasankar-m/sampletest/issues"
+  },
+  "homepage": "https://github.com/Jayasankar-m/sampletest#readme",
+  "dependencies": {
+    "chai": "^4.2.0",
+    "chai-as-promised": "^7.1.1",
+    "mocha": "^5.2.0",
+    "mocha-html-single-reporter": "^1.0.4",
+    "sinon": "^7.2.2"
+  }
+}

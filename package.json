@@ -4,7 +4,7 @@
   "description": "sample test",
   "main": "sample.js",
   "scripts": {
-    "test": "node node_modules\\mocha\\bin\\mocha --reporter mocha-html-single-reporter"
+    "test": "node ./node_modules/mocha/bin/mocha --reporter mocha-html-single-reporter"
   },
   "repository": {
     "type": "git",

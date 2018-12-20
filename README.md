@@ -1,2 +1,8 @@
 # sampletest
-sample test
+sample source and test files
+
+# Installation
+`npm install`
+
+# Usage
+`npm test`

@@ -1,4 +1,4 @@
-# sampletest
+# Sampletest
 sample source and test files
 
 # Installation

@@ -1,6 +1,6 @@
 # Sampletest
 - sample source and test files
-- Uses mocha framework
+- Unit testing using mocha framework
 - Uses Travis CI to execute tests after a PR
 
 # Installation

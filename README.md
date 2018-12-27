@@ -7,4 +7,5 @@
 `npm install`
 
 # Usage
+To execute unit tests run
 `npm test`

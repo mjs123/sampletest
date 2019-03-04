@@ -24,7 +24,7 @@ describe("Validate SampleAPI", function () {
         });
         let out = await sample(service, [], "", "")
         out.error.should.equal("request not proper")
-        out.response.statusCode.should.equal(400)
+        out.response.statusCode.should.equal(4001)
         //sinon.assert.calledOnce(service.FirstAPI);
     })
 

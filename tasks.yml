@@ -8,5 +8,4 @@ run:
     args:
         - ./source-files/execute.sh
 inputs:
-    -
-        name: source-files
+    - name: source-files

@@ -5,7 +5,8 @@ image_resource:
         repository: node
 run:
     path: bash
+    dir: source-files
     args:
-        - ./source-files/execute.sh
+        - ./execute.sh
 inputs:
     - name: source-files

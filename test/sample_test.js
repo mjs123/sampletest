@@ -440,7 +440,7 @@ describe("Validate SampleAPI", function () {
         out.response.statusCode.should.equal(506)
         out.response.body.Id.should.equal('id123456')
         sinon.assert.calledOnce(service.FirstAPI);
-        sinon.assert.callCount(service.SecondAPI, 41)
+        sinon.assert.callCount(service.SecondAPI, 4)
     })
 
 })

@@ -1,0 +1,17 @@
+groups:
+- name: project-team-group
+  jobs:
+  - unit-tests
+resources:
+- name: source-files
+  type: git
+  source:
+    uri: https://github.com/Jayasankar-m/sampletest.git
+resource_types: []
+jobs:
+- name: unit-tests
+  public: true
+  plan:
+  - get: source-files
+  - task: run-unit-tests
+    file: source-files/tasks.yml

@@ -5,6 +5,7 @@ groups:
 resources:
 - name: source-files
   type: git
+  icon: github-box
   source:
     uri: https://github.com/Jayasankar-m/sampletest.git
 resource_types: []

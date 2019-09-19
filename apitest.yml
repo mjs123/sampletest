@@ -15,4 +15,4 @@ jobs:
   plan:
   - get: source-files
   - task: run-api-tests
-    file: source-files/tasks.yml
+    file: source-files/api-tasks.yml

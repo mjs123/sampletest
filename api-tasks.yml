@@ -7,6 +7,6 @@ run:
     path: bash
     dir: source-files
     args:
-        - -n -t test/APITestAutomation.jmx -l results.csv -e -o report
+        - jmeter -n -t test/APITestAutomation.jmx
 inputs:
     - name: source-files

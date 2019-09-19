@@ -1,0 +1,18 @@
+groups:
+- name: project-team-group
+  jobs:
+  - ui-tests
+resources:
+- name: source-files
+  type: git
+  icon: github-box
+  source:
+    uri: https://github.com/Jayasankar-m/protractor.git
+resource_types: []
+jobs:
+- name: ui-tests
+  public: true
+  plan:
+  - get: source-files
+  - task: run-ui-tests
+    file: source-files/ui-tasks.yml

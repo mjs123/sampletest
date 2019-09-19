@@ -10,7 +10,7 @@ resources:
     uri: https://github.com/Jayasankar-m/sampletest.git
 resource_types: []
 jobs:
-- name: unit-tests
+- name: api-tests
   public: true
   plan:
   - get: source-files

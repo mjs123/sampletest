@@ -1,0 +1,12 @@
+platform: linux
+image_resource:
+    type: docker-image
+    source:
+        repository: justb4/jmeter
+run:
+    path: bash
+    dir: source-files
+    args:
+        - -n -t test/APITestAutomation.jmx -l results.csv -e -o report
+inputs:
+    - name: source-files

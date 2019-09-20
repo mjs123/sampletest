@@ -4,9 +4,21 @@ exports.config = {
   seleniumAddress:"http://35.222.142.226/wd/hub",
 
   // Capabilities to be passed to the webdriver instance.
-  capabilities: {
+ /* capabilities: {
     'browserName': 'chrome'
-  },
+  }, */
+
+  multiCapabilities: [
+    {
+      browserName: 'firefox',
+      'name': 'Firefox Test',
+    },
+    {
+      browserName: 'chrome',
+      'name': 'Chrome Test',
+    },
+  ],
+
 
   // Framework to use. Jasmine is recommended.
   framework: 'jasmine',

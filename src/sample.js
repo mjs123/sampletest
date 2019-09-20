@@ -1,6 +1,6 @@
 
 var SampleAPI = function (service, idList, name, defId, authToken, contentType, contentLength) {
-    var prom = Promise.resolve({error:"request not proper",response:{statusCode:400}});
+    var prom = Promise.resolve({error:"request not proper",response:{statusCode:4001}});
     var isError = false;
     for (let idItem of idList) {
         prom = prom.then(function (val) {

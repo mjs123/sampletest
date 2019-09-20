@@ -22,7 +22,8 @@ exports.config = {
 
   // Framework to use. Jasmine is recommended.
   framework: 'jasmine',
-
+  allScriptsTimeout: 610000,
+  getPageTimeout: 310000,
   // Spec patterns are relative to the current working directory when
   // protractor is called.
   specs: [
@@ -34,6 +35,6 @@ exports.config = {
 
   // Options to be passed to Jasmine.
   jasmineNodeOpts: {
-    defaultTimeoutInterval: 30000
+    defaultTimeoutInterval: 300000
   }
 };

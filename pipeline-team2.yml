@@ -1,0 +1,38 @@
+groups:
+- name: Team-2
+  jobs:
+  - unit-tests
+  - api-tests
+  - ui-tests
+resources:
+- name: source-files
+  type: git
+  icon: github-box
+  source:
+    uri: https://github.com/Jayasankar-m/sampletest.git
+    branch: team2
+resource_types: []
+jobs:
+- name: unit-tests
+  public: true
+  plan:
+  - get: source-files
+    trigger: true
+  - task: run-unit-tests
+    file: source-files/tasks.yml
+- name: api-tests
+  public: true
+  plan:
+  - get: source-files
+    passed: [unit-tests]
+    trigger: true
+  - task: run-api-tests
+    file: source-files/api-tasks.yml
+- name: ui-tests
+  public: true
+  plan:
+  - get: source-files
+    passed: [api-tests]
+    trigger: true
+  - task: run-ui-tests
+    file: source-files/ui-tasks.yml

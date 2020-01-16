@@ -1,4 +1,4 @@
-# Sample test
+# Sample test - continous integration
 - sample source and test files.
 - Unit testing using mocha framework.
 - Uses Travis CI to execute tests after a PR.
